@@ -2,8 +2,9 @@ name: aws-s3-instance
 type: terraform
 description: Module to provision s3-instance on aws
 tags:
-  - tools
-  - devops
+  - aws
+  - s3 bucket
+  - s3
 versions:
   - platforms: []
     dependencies: []
