@@ -1,3 +1,3 @@
-module "aws-s3-instance" {
+module "aws_s3_instance" {
   source = "./module"
 }
