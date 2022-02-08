@@ -5,8 +5,13 @@ variable "region" {
 }
 
 variable "access_key" {
-  type = string
+  type        = string
+  default = ""
+  description= " Refer https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html"
 }
+
 variable "secret_key" {
-  type = string
-}
+  type        = string
+  default = ""
+  description= " Refer https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html"
+ }

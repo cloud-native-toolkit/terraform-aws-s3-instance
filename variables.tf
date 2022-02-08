@@ -10,12 +10,6 @@ variable "acl" {
     default     = "private"
 }
 
-variable "versioning" {
-    type        = bool
-    description = "(Optional) A state of versioning."
-    default     = true
-}
-
 variable "tags" {
     type        = map
     description = "(Optional) A mapping of tags to assign to the bucket."
@@ -25,16 +19,20 @@ variable "tags" {
     }
 }
 
+variable "region" {
+  type        = string
+  default     = "ap-south-1"
+  description = "Please set the region where the resouces to be created "
+}
+
 variable "access_key" {
-    default = "AWS Access key"
-    description= " Refer https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html"
+  type        = string
+  default = ""
+  description= " Refer https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html"
 }
 
 variable "secret_key" {
-    default = "AWS Secret key"
-    description= " Refer https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html"
+  type        = string
+  default = ""
+  description= " Refer https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html"
  }
-    
-variable "region" {
-    default = "ap-south-1"
-}
