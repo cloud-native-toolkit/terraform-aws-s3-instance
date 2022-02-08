@@ -5,12 +5,12 @@ resource null_resource write_outputs {
 
     environment = {
       OUTPUT = jsonencode({
-        s3_bucket_id = module.aws-s3-instance.id
-        s3_bucket_arn = module.aws-s3-instance.arn
-        s3_bucket_bucket_domain_name = module.aws-s3-instance.bucket_domain_name
-        s3_bucket_bucket_regional_domain_name = module.aws-s3-instance.bucket_regional_domain_name
-        s3_bucket_hosted_zone_id = module.aws-s3-instance.hosted_zone_id
-        s3_bucket_region = module.aws-s3-instance.region
+        s3_bucket_id = module.aws-s3-instance.s3_bucket_id
+        s3_bucket_arn = module.aws-s3-instance.s3_bucket_arn
+        s3_bucket_bucket_domain_name = module.aws-s3-instance.s3_bucket_bucket_domain_name
+        s3_bucket_bucket_regional_domain_name = module.aws-s3-instance.s3_bucket_bucket_regional_domain_name
+        s3_bucket_hosted_zone_id = module.aws-s3-instance.s3_bucket_hosted_zone_id
+        s3_bucket_region = module.aws-s3-instance.s3_bucket_region
       })
     }
   }
