@@ -1,5 +1,5 @@
 locals {
-  rand_str = ${random_string.random.result}
+  rand_str = "${random_string.random.result}"
   bucket_name = lower("${var.bucket_prefix}-${local.rand_str}")
 }
 
