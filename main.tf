@@ -1,9 +1,9 @@
 locals {
-  rand_str = random_string.random.result
+  rand_str = ${random_string.random.result}
   bucket_name = lower("${var.bucket_prefix}-${local.rand_str}")
 }
 
-resource "random_string" "lower" {
+resource "random_string" "random" {
   length  = 4
   upper   = false
   lower   = true
