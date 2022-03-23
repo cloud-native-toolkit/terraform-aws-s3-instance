@@ -8,6 +8,9 @@ tags:
   - instance s3
 versions:
   - platforms: []
+    providers:
+      - name: aws
+        source: "hashicorp/aws"
     dependencies: []
     variables: []
 cloudProvider: aws
